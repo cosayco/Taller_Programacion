@@ -1,3 +1,4 @@
+#Clase 11-12/09/2025
 #Ejercicio 1
 densidades = [2.4, 2.6, 2.8, 2.3, 2.7]
 

@@ -1,3 +1,4 @@
+#Clase 11-12/09/2025
 #Ejercicio 1
 temperaturas = [18.5, 20.1, 19.8, 21.0, 17.6]
 suma = sum(temperaturas)
