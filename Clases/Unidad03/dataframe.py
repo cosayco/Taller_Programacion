@@ -14,7 +14,7 @@ df["Densidad"] = df["Masa"] / df["Volumen"]
 print(df)
 
 # Clasificar los materiales según su densidad
-df["Clasificación"] = df["Densidad"].apply(lambda x: "Liviana" if d < 2.5 else "Media" if d <= 7.0 else "Pesada")
+df["Clasificación"] = df["Densidad"].apply(lambda d: "Liviana" if d < 2.5 else "Media" if d <= 7.0 else "Pesada")
 print(df)
 
 # Guardar el DataFrame en un archivo CSV
