@@ -50,3 +50,27 @@ for nombre, datos in muestras.items():
     if datos["densidad"] > 2.5:
         print(f"{nombre} → Válida ({datos['material']})")
 
+metales = {
+    "Cobre": 8.96,
+    "Plata": 10.49,
+    "Aluminio": 2.70,
+    "Hierro": 7.87,
+    "Oro": 19.32
+}
+
+for metal, densidad in metales.items():
+    if densidad > 7:
+        print(f"{metal} tiene densidad mayor a 7 g/cm³")
+
+metales2 = [
+    {"material": "Cobre", "densidad": 8.96},
+    {"material": "Plata", "densidad": 10.49},
+    {"material": "Aluminio", "densidad": 2.70},
+    {"material": "Hierro", "densidad": 7.87},
+    {"material": "Oro", "densidad": 19.32}
+]
+
+for metal in metales2:
+    if metal["densidad"] > 7:
+        print(f'{metal["material"]} tiene densidad mayor a 7 g/cm³')
+
