@@ -50,6 +50,7 @@ for nombre, datos in muestras.items():
     if datos["densidad"] > 2.5:
         print(f"{nombre} → Válida ({datos['material']})")
 
+#Ejercicio 7
 metales = {
     "Cobre": 8.96,
     "Plata": 10.49,

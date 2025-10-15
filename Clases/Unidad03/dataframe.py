@@ -19,5 +19,3 @@ print(df)
 
 # Guardar el DataFrame en un archivo CSV
 df.to_csv("reporte_muestras.csv", index=False)
-
-
