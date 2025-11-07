@@ -1,4 +1,3 @@
-# Módulo: procesos_zip.py
 def imprimir_pares(nombres, codigos):
     """
     Utiliza zip() para emparejar y desempaquetar nombres y códigos,
