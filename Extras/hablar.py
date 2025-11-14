@@ -6,3 +6,5 @@ def hablar(texto):
     engine.runAndWait()
 
 hablar("Hola mundo")
+hablar("Soy un programa que habla")
+hablar("Estoy aprendiendo a usar la síntesis de voz")
