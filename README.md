@@ -16,10 +16,11 @@ Este repositorio contiene materiales y códigos de ejemplo desarrollados durante
 ## Estructura 🗂️
 
 ```
-├── Clases/        # Codigos de las clases realizadas
-├── Ejercicios/    # Ejercicios realizados en clases
-├── Evaluacion/    # Resultado de las evaluaciones realizadas
-└── Extras/        # Codigos varios de ejemplo
+├── Clases/            # Codigos de las clases realizadas
+├── Ejercicios/        # Ejercicios realizados en clases
+├── Evaluacion/        # Ejercicios corregidos de las evaluaciones
+├── Extras/            # Codigos varios de ejemplo
+└── Proyecto Final/    # Aplicaciones realizadas por los alumnos
 ```
 
 ## Cómo Usar Este Repositorio ⚙️

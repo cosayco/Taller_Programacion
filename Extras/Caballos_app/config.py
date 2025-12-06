@@ -1,0 +1,5 @@
+
+ANCHO = 800
+ALTO = 600
+META_X = 700
+FPS = 60

@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'MyCalculator' ;
+    src: url('./Calculator.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #1e1e1e;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculadora {
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #000;
+    width: 300px;
+}
+
+#pantalla {
+    width: 100%;
+    height: 50px;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    background-color: #1e1e1e;
+    color: white;
+    font-family: My;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #3a3a3a;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #505050;
+}
+
+.limpiar {
+    grid-column: span 4;
+    background-color: #c62828;
+}
