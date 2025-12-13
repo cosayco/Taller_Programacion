@@ -1,3 +1,5 @@
+#Ejemplo de variables en Python
+
 #Tipos de datos
 edad=20 #entero
 estatura=1.75 #float

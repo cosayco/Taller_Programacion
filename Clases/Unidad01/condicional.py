@@ -1,6 +1,6 @@
-edad=int(input("Ingrese su edad: "))
+#Ejemplo de sentencias condicionales en Python
 
-#Setencias condicionales
+edad=int(input("Ingrese su edad: "))
 if edad >= 18:
     print("Es mayor de edad")
 elif edad < 18 and edad >= 12:

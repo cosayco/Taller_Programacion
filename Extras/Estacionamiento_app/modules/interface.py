@@ -4,6 +4,7 @@ from modules.estacionamiento import Estacionamiento
 import random
 import threading
 import time
+import config as cf
 import os
 
 parking = Estacionamiento(capacidad=30)
@@ -15,7 +16,7 @@ def iniciar_gui():
 
     ventana = tk.Tk()
     ventana.title("Estacionamiento Visual")
-    ventana.geometry("700x650")
+    ventana.geometry("700x750")
     ventana.resizable(False, False)
     # Reloj digital en esquina superior derecha
     reloj_label = tk.Label(ventana, font=("Arial", 10), fg="#333", anchor="e")
@@ -92,12 +93,12 @@ def iniciar_gui():
         actualizar_estado()
 
     def generar_patente():
-        letras = ''.join(random.choices("ABCDEFGHIJKLMNOPQRSTUVWXYZ", k=3))
-        numeros = ''.join(random.choices("0123456789", k=3))
+        letras = ''.join(random.choices("ABCDEFGHIJKLMNOPQRSTUVWXYZ", k=4))
+        numeros = ''.join(random.choices("0123456789", k=2))
         return f"{letras}-{numeros}"
 
     def simular_movimiento():
-        global hilo_simulacion
+        global hilo_simulacion, simulacion_activa
         simulacion_activa = True
 
         def ciclo():
@@ -121,7 +122,7 @@ def iniciar_gui():
         messagebox.showinfo("Simulación", "Simulación automática detenida")
 
     def abrir_log():
-        ruta_log = os.path.join("db", "log.csv")
+        ruta_log = cf.LOG_FILE
         if os.path.exists(ruta_log):
             os.startfile(ruta_log)
         else:

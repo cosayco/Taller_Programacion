@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 from modules.interface import iniciar_gui
 
-USUARIO_VALIDO = "Admin"
+USUARIO_VALIDO = "admin"
 CLAVE_VALIDA = "1234"
 
 def mostrar_login():

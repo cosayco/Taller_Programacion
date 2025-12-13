@@ -1,4 +1,5 @@
 #Repaso de funciones 25-26/09/2025
+
 #Crear una función que calcule el área de un triángulo
 def area_triangulo(base, altura):
     area = (base * altura) / 2

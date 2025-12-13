@@ -2,15 +2,14 @@ from modules.vehiculo import Vehiculo
 import csv
 from datetime import datetime
 import os
+import config as cf
 
 class Estacionamiento:
     def __init__(self, capacidad=50):
         self.capacidad = capacidad
         self.vehiculos = {}
 
-        self.log_path = os.path.join("\db", "log.csv")
-        if not os.path.exists("data"):
-            os.makedirs("data")
+        self.log_path = cf.LOG_FILE
         if not os.path.exists(self.log_path):
             with open(self.log_path, "w", newline="") as f:
                 writer = csv.writer(f)

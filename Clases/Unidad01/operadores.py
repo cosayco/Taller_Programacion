@@ -1,3 +1,5 @@
+#Ejemplos de operadores en Python
+
 edad=46
 
 #Operadores aritméticos

@@ -1,4 +1,5 @@
 #Clases 25-26/09/2025
+
 #Usar lambda para calcular el área de un círculo
 PI=3.1416
 area_circulo = lambda r: PI * r**2
